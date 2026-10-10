@@ -1,0 +1,390 @@
+{
+  "startedAtUtc": "2026-10-10T09:02:26.091Z",
+  "finishedAtUtc": "2026-10-10T09:02:26.566Z",
+  "elapsedMs": 475,
+  "model": {
+    "id": "Xenova/all-MiniLM-L6-v2",
+    "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "runtime": "Transformers.js 3.8.1",
+    "dtype": "q8",
+    "dimensions": 384
+  },
+  "initialization": {
+    "dimensions": 384,
+    "activityCount": 12,
+    "initializationMs": 352,
+    "model": {
+      "id": "Xenova/all-MiniLM-L6-v2",
+      "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+      "runtime": "Transformers.js 3.8.1",
+      "dtype": "q8",
+      "dimensions": 384
+    }
+  },
+  "semantic": {
+    "cases": [
+      {
+        "query": "I want to stop and hear the breeze and nearby sounds.",
+        "expected": "listen",
+        "actual": [
+          {
+            "id": "listen",
+            "score": 0.53594
+          },
+          {
+            "id": "clouds",
+            "score": 0.42513
+          },
+          {
+            "id": "birds",
+            "score": 0.32999
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I would like to quietly observe a feathered visitor flying around.",
+        "expected": "birds",
+        "actual": [
+          {
+            "id": "birds",
+            "score": 0.51453
+          },
+          {
+            "id": "clouds",
+            "score": 0.39964
+          },
+          {
+            "id": "listen",
+            "score": 0.37358
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I feel like looking up and seeing shapes drift across the sky.",
+        "expected": "clouds",
+        "actual": [
+          {
+            "id": "clouds",
+            "score": 0.48948
+          },
+          {
+            "id": "textures",
+            "score": 0.36737
+          },
+          {
+            "id": "leaf-sketch",
+            "score": 0.31822
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 7,
+        "status": "matched"
+      },
+      {
+        "query": "I want to wander and notice surfaces that are rough or smooth.",
+        "expected": "textures",
+        "actual": [
+          {
+            "id": "textures",
+            "score": 0.55754
+          },
+          {
+            "id": "leaf-sketch",
+            "score": 0.41113
+          },
+          {
+            "id": "sky-sketch",
+            "score": 0.40771
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 7,
+        "status": "matched"
+      },
+      {
+        "query": "I want a little scavenger hunt looking for things of one hue.",
+        "expected": "colors",
+        "actual": [
+          {
+            "id": "colors",
+            "score": 0.55338
+          },
+          {
+            "id": "leaf-sketch",
+            "score": 0.30125
+          },
+          {
+            "id": "photo",
+            "score": 0.28665
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I would like to draw the outline of buildings against the horizon.",
+        "expected": "sky-sketch",
+        "actual": [
+          {
+            "id": "sky-sketch",
+            "score": 0.6856
+          },
+          {
+            "id": "leaf-sketch",
+            "score": 0.36127
+          },
+          {
+            "id": "photo",
+            "score": 0.27125
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I want to sit on a bench and enjoy a few pages of a novel.",
+        "expected": "read",
+        "actual": [
+          {
+            "id": "read",
+            "score": 0.68534
+          },
+          {
+            "id": "clouds",
+            "score": 0.36286
+          },
+          {
+            "id": "listen",
+            "score": 0.33494
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I want to use my pencil to capture the shape of a plant.",
+        "expected": "leaf-sketch",
+        "actual": [
+          {
+            "id": "leaf-sketch",
+            "score": 0.53936
+          },
+          {
+            "id": "sky-sketch",
+            "score": 0.34234
+          },
+          {
+            "id": "colors",
+            "score": 0.32469
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 7,
+        "status": "matched"
+      },
+      {
+        "query": "I would like to take a picture of an interesting shadow outside.",
+        "expected": "photo",
+        "actual": [
+          {
+            "id": "photo",
+            "score": 0.65281
+          },
+          {
+            "id": "colors",
+            "score": 0.4942
+          },
+          {
+            "id": "sky-sketch",
+            "score": 0.38611
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 7,
+        "status": "matched"
+      },
+      {
+        "query": "I want to stretch my legs and stroll around a familiar route.",
+        "expected": "walk",
+        "actual": [
+          {
+            "id": "walk",
+            "score": 0.60831
+          },
+          {
+            "id": "leaf-sketch",
+            "score": 0.34766
+          },
+          {
+            "id": "listen",
+            "score": 0.32448
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 8,
+        "status": "matched"
+      },
+      {
+        "query": "I want to go outdoors with a friend and catch up about our day.",
+        "expected": "talk",
+        "actual": [
+          {
+            "id": "talk",
+            "score": 0.65125
+          },
+          {
+            "id": "colors",
+            "score": 0.43424
+          },
+          {
+            "id": "photo",
+            "score": 0.43188
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 10,
+        "status": "matched"
+      },
+      {
+        "query": "I want to make a public place cleaner by collecting a little litter.",
+        "expected": "tidy",
+        "actual": [
+          {
+            "id": "tidy",
+            "score": 0.74375
+          },
+          {
+            "id": "colors",
+            "score": 0.36114
+          },
+          {
+            "id": "photo",
+            "score": 0.21808
+          }
+        ],
+        "top1": true,
+        "top3": true,
+        "inferenceMs": 10,
+        "status": "matched"
+      }
+    ],
+    "top1Passed": 12,
+    "top3Passed": 12,
+    "total": 12
+  },
+  "filters": {
+    "combinations": 192,
+    "violations": [],
+    "actualInferenceConstraintPass": true,
+    "actualInferenceIds": [
+      "listen",
+      "clouds"
+    ]
+  },
+  "edgeCases": {
+    "zeroEligible": "empty",
+    "empty": "invalid",
+    "numerical": "invalid",
+    "overlong": "invalid",
+    "unrelated": {
+      "status": "uncertain",
+      "topId": "walk",
+      "topScore": 0.1517281735785318
+    },
+    "nonsense": {
+      "status": "uncertain",
+      "topId": "leaf-sketch",
+      "topScore": 0.15348432407075147
+    }
+  },
+  "resourceRequests": [
+    {
+      "url": "http://127.0.0.1:8765/style.css",
+      "durationMs": 2,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/validation.js",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/catalog.js",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/engine.js",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/transformers.web.js",
+      "durationMs": 2,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/onnx/ort.wasm.bundle.min.mjs",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/models/Xenova/all-MiniLM-L6-v2/tokenizer.json",
+      "durationMs": 2,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/models/Xenova/all-MiniLM-L6-v2/config.json",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/models/Xenova/all-MiniLM-L6-v2/tokenizer_config.json",
+      "durationMs": 1,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/models/Xenova/all-MiniLM-L6-v2/onnx/model_quantized.onnx",
+      "durationMs": 45,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/onnx/ort-wasm-simd-threaded.mjs",
+      "durationMs": 2,
+      "transferBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/onnx/ort-wasm-simd-threaded.wasm",
+      "durationMs": 9,
+      "transferBytes": 0
+    }
+  ],
+  "externalAssetRequests": [],
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "limitations": [
+    "12 development fixtures are not an unbiased benchmark.",
+    "Similarity threshold 0.28 is a fixed heuristic, not calibrated confidence.",
+    "Seated flag is a card posture filter, not an accessibility audit.",
+    "No actual outdoor field test or user trial performed."
+  ]
+}
