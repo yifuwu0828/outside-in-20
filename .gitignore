@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+demo-*.jpg
+*-dom.txt
+/validation-*.json
+/server-offline-check.json
+/prepare_release.py
+public/vendor/onnx/*jsep*
+public/vendor/onnx/ort.wasm.min.mjs

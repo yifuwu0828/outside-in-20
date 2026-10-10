@@ -1,0 +1,1 @@
+{"name":"outside-in-20","version":"1.0.0","private":true,"type":"module","license":"MIT","scripts":{"check":"node --check public/app.js && node --check public/engine.js && node --check public/validation.js && node --check public/sw.js"}}
