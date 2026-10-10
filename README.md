@@ -2,7 +2,9 @@
 
 A small browser-local outdoor activity chooser. Describe an English-language preference, set your available time and equipment, and take one short card away from the screen.
 
-Created October 10, 2026 for the DEV Hacktoberfest Week 1 **Touch Grass** theme. This is a new local project, not a published contest entry or an awarded commission.
+Created October 10, 2026 for the DEV Hacktoberfest Week 1 **Touch Grass** theme. The public repository and free hosted demo are live. The DEV contest article is saved as an unpublished draft; no prize or commission has been awarded.
+
+[Live demo](https://yifuwu0828.github.io/outside-in-20/) · [Run validation](https://yifuwu0828.github.io/outside-in-20/validation.html) · [Source repository](https://github.com/yifuwu0828/outside-in-20)
 
 ## Run
 
@@ -18,7 +20,7 @@ The supplied `public/` contains the model and runtime. If you obtained source wi
 
 For free static hosting, deploy **the contents of `public/`**, preserving paths. HTTPS or localhost is required for the optional service worker. There is no backend, API key, paid model API, telemetry, GPS or account. Do not put unrelated workspace files or private session transcripts into a public repository.
 
-An optional GitHub Pages workflow is prepared at `.github/workflows/pages.yml`, using the actions versions in the [current official Pages instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). It publishes only `public/`. It has not run and no remote repository has been created. After approving publication, create a new public repository, upload this project's release contents, and choose GitHub Actions under Settings → Pages. Pages is available for public repositories on GitHub Free. Verify the actual deployment URL and working inference before replacing the two pending links in `DEV_POST_DRAFT.md` and entering the contest.
+An optional GitHub Pages workflow is prepared at `.github/workflows/pages.yml`, using the actions versions in the [current official Pages instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). It publishes only `public/`. The [first public deployment](https://github.com/yifuwu0828/outside-in-20/actions/runs/38042224250) succeeded on October 10, 2026. Settings → Pages uses GitHub Actions. The public demo performed real inference and passed all twelve semantic fixtures plus 192 filter combinations with zero violations. That validation used warmed browser assets; it is not a first-download speed benchmark. `DEV_POST_DRAFT.md` now includes the verified links. Publishing the contest entry remains subject to the entrant's confirmation of the contest terms and accurate article disclosure.
 
 ## Open model at the core
 

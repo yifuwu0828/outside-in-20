@@ -4,7 +4,7 @@ published: false
 tags: devchallenge, hf26challenge
 ---
 
-This project is prepared for the [Hacktoberfest Week 1 Touch Grass challenge](https://dev.to/challenges/hacktoberfest-week1-2026-10-05). Public demo and repository links must be added before publishing this draft.
+*This is a submission for the [Hacktoberfest Open-Source AI Challenge Week 1: Touch Grass](https://dev.to/challenges/hacktoberfest-week1-2026-10-05).*
 
 ## What I Built
 
@@ -16,7 +16,9 @@ Write one sentence, select your practical limits, and choose from up to three sh
 
 ## Demo
 
-**PUBLIC DEMO URL: pending publication.**
+[Try Outside in 20](https://yifuwu0828.github.io/outside-in-20/) · [Run the validation page](https://yifuwu0828.github.io/outside-in-20/validation.html).
+
+The public GitHub Pages build has also passed the same twelve semantic fixtures and 192 constraint combinations, with zero violations. This run used already cached model assets.
 
 In the locally tested demo, “I want to draw a small piece of nature on paper,” with ten minutes, seated only and paper available, ranks the leaf sketch first. A five-minute seated/no-equipment filter instead restricts results to listening and sky watching, even when the words ask for a photo walk.
 
@@ -24,7 +26,7 @@ The cache was also tested with the local server stopped: reload the app, ask for
 
 ## Code
 
-**NEW PUBLIC REPOSITORY URL: pending publication.**
+[Source code and licenses on GitHub](https://github.com/yifuwu0828/outside-in-20).
 
 The new local repository includes original source and cards, vendored runtime/model assets with licenses and hashes, a loopback-only Python static server, and a separate reproducible validation page. It was created during this challenge's submission window.
 
